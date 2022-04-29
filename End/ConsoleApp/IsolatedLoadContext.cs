@@ -48,7 +48,6 @@ namespace ConsoleApp
             string assemblyPath = _resolver.ResolveAssemblyToPath(assemblyName);
             if (assemblyPath != null)
             {
-                Console.WriteLine(assemblyPath);
                 return LoadFromAssemblyPath(assemblyPath);
             }
 
